@@ -26,3 +26,7 @@ $ ./gethosts 8.8.8.8/30
 8.8.8.9:
 8.8.8.10:
 8.8.8.11:
+
+
+## Requirement
+python version 3
