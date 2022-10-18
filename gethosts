@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+
+import ipaddress
+import random
+import time
+import socket
+import sys
+
+
+def validate_input(input):
+    return(input[1])
+
+
+def list_hosts(network):
+    for x in ipaddress.ip_network(network, strict=False):
+        time.sleep(random.random())
+        print(f'{x}:', end = ' ')
+        n = socket.getfqdn(str(x))
+        if n == str(x):
+            print()
+        else:
+            print(n)
+
+
+if __name__ == '__main__':
+    network = validate_input(sys.argv)
+    list_hosts(network)
