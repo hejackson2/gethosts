@@ -28,5 +28,5 @@ $ ./gethosts 8.8.8.8/30
 8.8.8.11:
 ```
 
-## Requirement
+## Requirements
 python version 3
